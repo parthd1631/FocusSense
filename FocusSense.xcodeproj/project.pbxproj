@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DBEEC99E2DC9A2570028D514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEEC9942DC9A2570028D514 /* Assets.xcassets */; };
+		DBEEC99F2DC9A2570028D514 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBEEC9982DC9A2570028D514 /* Info.plist */; };
+		DBEEC9A02DC9A2570028D514 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEC9952DC9A2570028D514 /* ContentView.swift */; };
+		DBEEC9A12DC9A2570028D514 /* FocusSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEC9972DC9A2570028D514 /* FocusSenseApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DBEEC9332DC995A10028D514 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +34,14 @@
 		DBEEC9242DC9959F0028D514 /* FocusSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEEC9322DC995A10028D514 /* FocusSenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusSenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEEC93C2DC995A10028D514 /* FocusSenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusSenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEEC9942DC9A2570028D514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEEC9952DC9A2570028D514 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBEEC9962DC9A2570028D514 /* FocusSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusSense.entitlements; sourceTree = "<group>"; };
+		DBEEC9972DC9A2570028D514 /* FocusSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSenseApp.swift; sourceTree = "<group>"; };
+		DBEEC9982DC9A2570028D514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBEEC9262DC9959F0028D514 /* FocusSense */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FocusSense;
-			sourceTree = "<group>";
-		};
 		DBEEC9352DC995A10028D514 /* FocusSenseTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FocusSenseTests;
@@ -43,6 +50,21 @@
 		DBEEC93F2DC995A10028D514 /* FocusSenseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FocusSenseUITests;
+			sourceTree = "<group>";
+		};
+		DBEEC9552DC99C060028D514 /* CreateML */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CreateML;
+			sourceTree = "<group>";
+		};
+		DBEEC9592DC99C2F0028D514 /* TrainingData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TrainingData;
+			sourceTree = "<group>";
+		};
+		DBEEC9B02DC9A8CB0028D514 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +97,12 @@
 		DBEEC91B2DC9959F0028D514 = {
 			isa = PBXGroup;
 			children = (
-				DBEEC9262DC9959F0028D514 /* FocusSense */,
+				DBEEC9592DC99C2F0028D514 /* TrainingData */,
+				DBEEC9552DC99C060028D514 /* CreateML */,
 				DBEEC9352DC995A10028D514 /* FocusSenseTests */,
 				DBEEC93F2DC995A10028D514 /* FocusSenseUITests */,
 				DBEEC9252DC9959F0028D514 /* Products */,
+				DBEEC9992DC9A2570028D514 /* FocusSense */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +114,19 @@
 				DBEEC93C2DC995A10028D514 /* FocusSenseUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEEC9992DC9A2570028D514 /* FocusSense */ = {
+			isa = PBXGroup;
+			children = (
+				DBEEC9B02DC9A8CB0028D514 /* Models */,
+				DBEEC9942DC9A2570028D514 /* Assets.xcassets */,
+				DBEEC9952DC9A2570028D514 /* ContentView.swift */,
+				DBEEC9962DC9A2570028D514 /* FocusSense.entitlements */,
+				DBEEC9972DC9A2570028D514 /* FocusSenseApp.swift */,
+				DBEEC9982DC9A2570028D514 /* Info.plist */,
+			);
+			path = FocusSense;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +145,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DBEEC9262DC9959F0028D514 /* FocusSense */,
+				DBEEC9552DC99C060028D514 /* CreateML */,
+				DBEEC9592DC99C2F0028D514 /* TrainingData */,
+				DBEEC9B02DC9A8CB0028D514 /* Models */,
 			);
 			name = FocusSense;
 			packageProductDependencies = (
@@ -212,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEEC99E2DC9A2570028D514 /* Assets.xcassets in Resources */,
+				DBEEC99F2DC9A2570028D514 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEEC9A02DC9A2570028D514 /* ContentView.swift in Sources */,
+				DBEEC9A12DC9A2570028D514 /* FocusSenseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
